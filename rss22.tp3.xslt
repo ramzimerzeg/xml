@@ -4,7 +4,9 @@
 				version="1.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
-	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+	<xsl:template match="/p:feed">
+		<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+    </xsl:template>
       	
       
       <xsl:element name="html">
