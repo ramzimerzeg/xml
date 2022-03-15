@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:feed lang="es-005" xmlns:p="http://univrouen.fr/rss22" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://univrouen.fr/rss22 rss22.tp1.xsd ">
+  <p:titre>flux TP3</p:titre>
+  <p:pubDate>2022-09-09</p:pubDate>
+  <p:copyright>copyright</p:copyright>
+  <p:link href="" rel="self" type=""/>
+  <p:item>
+    <p:guid>guid</p:guid>
+    <p:title>title</p:title>
+    
+    <p:category term=""/>
+    <p:published>2001-01-01</p:published>
+    <p:content type="text">content</p:content>
+    <p:author>
+      <p:name>name</p:name>
+    </p:author>
+  </p:item>
+</p:feed>
+
