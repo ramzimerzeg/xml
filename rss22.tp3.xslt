@@ -5,25 +5,14 @@
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
 	<xsl:template match="/p:feed">
-		<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
-    </xsl:template>
-      	
-      
+	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
       <xsl:element name="html">
-        <xsl:template match="/p:feed">
-      
         <xsl:element name="head">
           <xsl:element name="title"><xsl:text> TP4 FLUX RSS22 </xsl:text>
             <xsl:value-of select="titre"/>
           </xsl:element>
         </xsl:element>
-        
-       </xsl:template>
-        
         <xsl:element name="body">
-        
-        <xsl:template match="/p:feed">
-        
           <xsl:element name="h1">
 	           <xsl:text>TP4 FLUX RSS22 </xsl:text>
 	      </xsl:element>
@@ -40,7 +29,7 @@
 	          	<xsl:element name="li">	
 	          		<xsl:text>Contenu : </xsl:text>
 	          		<xsl:element name="p:titre">
-            		<xsl:value-of select="p:titre"/>
+            		<xsl:value-of select="p:content"/>
               		</xsl:element>
 	         	</xsl:element>
 
@@ -61,45 +50,43 @@
 	          </xsl:element>              
           </xsl:element>
           
-          </xsl:template>
-          
-          <xsl:template match="/p:item">
-	           <xsl:element name="h2">
-		           <xsl:text>Détails des informations </xsl:text>
-		      </xsl:element>
-		      
-		       <xsl:element name="h3">	
-		          		<xsl:element name="p:titre">
-	            		<xsl:value-of select="p:titre"/>
-	              		</xsl:element>
-	              		
-	              		<xsl:element name="text">	
-		              		<xsl:text>( </xsl:text>
-		              		<xsl:element name="p:guid">
-		            			<xsl:value-of select="p:guid"/>
-	              			</xsl:element>
-	              			<xsl:text> ) </xsl:text>
-		       			</xsl:element>
-		       	</xsl:element>
-	
-				<xsl:element name="image">	
-		            	<xsl:attribute name="size">500px</xsl:attribute>
-		              	<xsl:element name="p:image">
-		            	<xsl:value-of select="p:image"/>
-	            		</xsl:element>
-	            </xsl:element>
-	            
-	            <xsl:element name="h4">	
-	            	    <xsl:text>Auteur </xsl:text>
-		              	<xsl:element name="p:name">
-		            	<xsl:value-of select="p:name"/>
-	            		</xsl:element>	     
-				</xsl:element>
-			</xsl:template>
-			
+           <xsl:element name="h2">
+	           <xsl:text>Détails des informations </xsl:text>
+	      </xsl:element>
+	      
+	       <xsl:element name="h3">	
+	          		<xsl:element name="p:titre">
+            		<xsl:value-of select="p:titre"/>
+              		</xsl:element>
+              		
+              		<xsl:element name="text">	
+	              		<xsl:text>( </xsl:text>
+	              		<xsl:element name="p:guid">
+	            			<xsl:value-of select="p:guid"/>
+              			</xsl:element>
+              			<xsl:text> ) </xsl:text>
+	       			</xsl:element>
+	       	</xsl:element>
+
+			<xsl:element name="image">	
+	            	<xsl:attribute name="size">500px</xsl:attribute>
+	              	<xsl:element name="p:image">
+	            	<xsl:value-of select="p:image"/>
+            		</xsl:element>
+            </xsl:element>
+            
+            <xsl:element name="h4">	
+            	    <xsl:text>Auteur </xsl:text>
+	              	<xsl:element name="p:name">
+	            	<xsl:value-of select="p:name"/>
+            		</xsl:element>	     
+			</xsl:element>
 			
         </xsl:element>
-      </xsl:element>    
+      </xsl:element>
+      
+    </xsl:template>
+    
     
 </xsl:stylesheet>
 
