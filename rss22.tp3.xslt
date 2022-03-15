@@ -28,8 +28,8 @@
 	          
 	          	<xsl:element name="li">	
 	          		<xsl:text>Contenu : </xsl:text>
-	          		<xsl:element name="p:content">
-            		<xsl:value-of select="p:content"/>
+	          		<xsl:element name="p:titre">
+            		<xsl:value-of select="p:titre"/>
               		</xsl:element>
 	         	</xsl:element>
 
@@ -59,12 +59,12 @@
             		<xsl:value-of select="p:titre"/>
               		</xsl:element>
               		
-              		<xsl:element name="i">	
+              		<xsl:element name="text">	
 	              		<xsl:text>( </xsl:text>
 	              		<xsl:element name="p:guid">
 	            			<xsl:value-of select="p:guid"/>
-	            			<xsl:text> ) </xsl:text>
               			</xsl:element>
+              			<xsl:text> ) </xsl:text>
 	       			</xsl:element>
 	       	</xsl:element>
 
