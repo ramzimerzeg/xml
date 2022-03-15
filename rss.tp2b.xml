@@ -5,12 +5,13 @@
   <p:copyright>copyright</p:copyright>
   <p:link href="" rel="self" type=""/>
   <p:item>
-    <p:guid>guid</p:guid>
-    <p:title>title</p:title>
+    <p:guid>1</p:guid>
+    <p:title>item1</p:title>
     
     <p:category term=""/>
     <p:published>2001-01-01</p:published>
-    <p:content type="text">content</p:content>
+    <p:image type="JPG" href="https://www.referenseo.com/wp-content/uploads/2019/03/image-attractive-960x540.jpg" alt=""/>
+    <p:content type="text">flux TP3</p:content>
     <p:author>
       <p:name>name</p:name>
     </p:author>
