@@ -17,7 +17,7 @@
 	           <xsl:text>TP4 FLUX RSS22 </xsl:text>
 	      </xsl:element>
           <xsl:value-of select="pubDate"/><xsl:text> </xsl:text>
-          <xsl:text>09 mars 2022 </xsl:text>
+          <xsl:text>Le 09 mars 2022 </xsl:text>
           <xsl:value-of select="pubDate"/><xsl:text> </xsl:text> 
           <xsl:element name="div">
 	           <xsl:element name="h1">
@@ -28,8 +28,8 @@
 	          
 	          	<xsl:element name="li">	
 	          		<xsl:text>Contenu : </xsl:text>
-	          		<xsl:element name="p:titre">
-            		<xsl:value-of select="p:titre"/>
+	          		<xsl:element name="p:content">
+            		<xsl:value-of select="p:content"/>
               		</xsl:element>
 	         	</xsl:element>
 
@@ -47,16 +47,43 @@
               		<xsl:text>univrouen 2022 </xsl:text>
 	         	</xsl:element>	          
 	          
-	          </xsl:element>
-	          
-	          
-              
+	          </xsl:element>              
           </xsl:element>
           
-          
+           <xsl:element name="h2">
+	           <xsl:text>Détails des informations </xsl:text>
+	      </xsl:element>
+	      
+	       <xsl:element name="h3">	
+	          		<xsl:element name="p:titre">
+            		<xsl:value-of select="p:titre"/>
+              		</xsl:element>
+              		
+              		<xsl:element name="i">	
+	              		<xsl:text>( </xsl:text>
+	              		<xsl:element name="p:guid">
+	            		<xsl:value-of select="p:guid"/>
+	            		<xsl:text> ) </xsl:text>
+              		</xsl:element>
+	       </xsl:element>
+
+			<xsl:element name="picture">	
+	            	<xsl:attribute name="size">500px</xsl:attribute>
+	              	<xsl:element name="p:image">
+	            	<xsl:value-of select="p:image"/>
+            </xsl:element>
+            
+            <xsl:element name="h4">	
+            	    <xsl:text>Auteur </xsl:text>
+	              	<xsl:element name="p:name">
+	            	<xsl:value-of select="p:name"/>
+            </xsl:element>	     
+
           
         </xsl:element>
       </xsl:element>
     </xsl:template>
+    
+    
 </xsl:stylesheet>
 
