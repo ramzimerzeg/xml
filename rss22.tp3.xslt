@@ -68,7 +68,7 @@
 	       			</xsl:element>
 	       	</xsl:element>
 
-			<xsl:element name="picture">	
+			<xsl:element name="image">	
 	            	<xsl:attribute name="size">500px</xsl:attribute>
 	              	<xsl:element name="p:image">
 	            	<xsl:value-of select="p:image"/>
