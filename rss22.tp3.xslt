@@ -13,7 +13,9 @@
           </xsl:element>
         </xsl:element>
         <xsl:element name="body">
-       	  <xsl:text>TP4 FLUX RSS22 </xsl:text>
+          <xsl:element name="h1">
+	           <xsl:text>TP4 FLUX RSS22 </xsl:text>
+	      </xsl:element>
           <xsl:value-of select="pubDate"/><xsl:text> </xsl:text>
           <xsl:text>09 mars 2022 </xsl:text>
           <xsl:value-of select="pubDate"/><xsl:text> </xsl:text> 
@@ -32,7 +34,7 @@
 	         	</xsl:element>
 
 	          	<xsl:element name="li">	
-	          		<xsl:text>Publié le : </xsl:text>
+	          		<xsl:text>Publié le </xsl:text>
 	          		<xsl:element name="p:pubdate">
             		<xsl:value-of select="p:pubDate"/>
               		</xsl:element>
@@ -42,6 +44,7 @@
 	          		<xsl:element name="p:copyright">
             		<xsl:value-of select="p:copyright"/>
               		</xsl:element>
+              		<xsl:text>univrouen 2022 </xsl:text>
 	         	</xsl:element>	          
 	          
 	          </xsl:element>
