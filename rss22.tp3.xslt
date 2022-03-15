@@ -62,26 +62,29 @@
               		<xsl:element name="i">	
 	              		<xsl:text>( </xsl:text>
 	              		<xsl:element name="p:guid">
-	            		<xsl:value-of select="p:guid"/>
-	            		<xsl:text> ) </xsl:text>
-              		</xsl:element>
-	       </xsl:element>
+	            			<xsl:value-of select="p:guid"/>
+	            			<xsl:text> ) </xsl:text>
+              			</xsl:element>
+	       			</xsl:element>
+	       	</xsl:element>
 
 			<xsl:element name="picture">	
 	            	<xsl:attribute name="size">500px</xsl:attribute>
 	              	<xsl:element name="p:image">
 	            	<xsl:value-of select="p:image"/>
+            		</xsl:element>
             </xsl:element>
             
             <xsl:element name="h4">	
             	    <xsl:text>Auteur </xsl:text>
 	              	<xsl:element name="p:name">
 	            	<xsl:value-of select="p:name"/>
-            </xsl:element>	     
-
-          
+            		</xsl:element>	     
+			</xsl:element>
+			
         </xsl:element>
       </xsl:element>
+      
     </xsl:template>
     
     
