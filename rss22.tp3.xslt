@@ -50,37 +50,40 @@
 	          </xsl:element>              
           </xsl:element>
           
-           <xsl:element name="h2">
-	           <xsl:text>Détails des informations </xsl:text>
-	      </xsl:element>
-	      
-	       <xsl:element name="h3">	
-	          		<xsl:element name="p:titre">
-            		<xsl:value-of select="p:titre"/>
-              		</xsl:element>
-              		
-              		<xsl:element name="text">	
-	              		<xsl:text>( </xsl:text>
-	              		<xsl:element name="p:guid">
-	            			<xsl:value-of select="p:guid"/>
-              			</xsl:element>
-              			<xsl:text> ) </xsl:text>
-	       			</xsl:element>
-	       	</xsl:element>
-
-			<xsl:element name="image">	
-	            	<xsl:attribute name="size">500px</xsl:attribute>
-	              	<xsl:element name="p:image">
-	            	<xsl:value-of select="p:image"/>
-            		</xsl:element>
-            </xsl:element>
-            
-            <xsl:element name="h4">	
-            	    <xsl:text>Auteur </xsl:text>
-	              	<xsl:element name="p:name">
-	            	<xsl:value-of select="p:name"/>
-            		</xsl:element>	     
-			</xsl:element>
+          <xsl:template match="/p:item">
+	           <xsl:element name="h2">
+		           <xsl:text>Détails des informations </xsl:text>
+		      </xsl:element>
+		      
+		       <xsl:element name="h3">	
+		          		<xsl:element name="p:titre">
+	            		<xsl:value-of select="p:titre"/>
+	              		</xsl:element>
+	              		
+	              		<xsl:element name="text">	
+		              		<xsl:text>( </xsl:text>
+		              		<xsl:element name="p:guid">
+		            			<xsl:value-of select="p:guid"/>
+	              			</xsl:element>
+	              			<xsl:text> ) </xsl:text>
+		       			</xsl:element>
+		       	</xsl:element>
+	
+				<xsl:element name="image">	
+		            	<xsl:attribute name="size">500px</xsl:attribute>
+		              	<xsl:element name="p:image">
+		            	<xsl:value-of select="p:image"/>
+	            		</xsl:element>
+	            </xsl:element>
+	            
+	            <xsl:element name="h4">	
+	            	    <xsl:text>Auteur </xsl:text>
+		              	<xsl:element name="p:name">
+		            	<xsl:value-of select="p:name"/>
+	            		</xsl:element>	     
+				</xsl:element>
+			</xsl:template>
+			
 			
         </xsl:element>
       </xsl:element>
