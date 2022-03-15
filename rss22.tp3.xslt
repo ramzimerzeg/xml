@@ -4,15 +4,24 @@
 				version="1.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
-	<xsl:template match="/p:feed">
 	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+      	
+      
       <xsl:element name="html">
+        <xsl:template match="/p:feed">
+      
         <xsl:element name="head">
           <xsl:element name="title"><xsl:text> TP4 FLUX RSS22 </xsl:text>
             <xsl:value-of select="titre"/>
           </xsl:element>
         </xsl:element>
+        
+       </xsl:template>
+        
         <xsl:element name="body">
+        
+        <xsl:template match="/p:feed">
+        
           <xsl:element name="h1">
 	           <xsl:text>TP4 FLUX RSS22 </xsl:text>
 	      </xsl:element>
@@ -50,6 +59,8 @@
 	          </xsl:element>              
           </xsl:element>
           
+          </xsl:template>
+          
           <xsl:template match="/p:item">
 	           <xsl:element name="h2">
 		           <xsl:text>Détails des informations </xsl:text>
@@ -86,10 +97,7 @@
 			
 			
         </xsl:element>
-      </xsl:element>
-      
-    </xsl:template>
-    
+      </xsl:element>    
     
 </xsl:stylesheet>
 
